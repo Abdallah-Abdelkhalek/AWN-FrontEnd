@@ -206,7 +206,7 @@ function RecyclingPage() {
                             <Row style={{ marginTop: "30px", marginLeft: "50px" }}>
                                 {showedPosts}
                             </Row>
-
+                            {allPosts.length > 30 &&
                             <Row className="paginateRow">
                                 <ReactPaginate
                                     breakClassName={'page-item'} breakLinkClassName={'page-link'} containerClassName={'pagination'} pageClassName={'page-item'} pageLinkClassName={'page-link'} previousClassName={'page-item'} previousLinkClassName={'page-link'} nextClassName={'page-item'} nextLinkClassName={'page-link'} activeClassName={'active'}
@@ -219,7 +219,7 @@ function RecyclingPage() {
                                     }}
                                     forcePage={start}
                                 />
-                            </Row>
+                            </Row> }
                         </div>}
                 </div>
             </Container>
